@@ -7,13 +7,15 @@ function App() {
 
   return (
     <>
+    {/* left site logo part */}
      <div className="navbar max-w-[1000px] mx-auto">
   <div className="flex-1">
     <a className="text-xl">
       <img className = "w-[60px] h-[60px]"src={navImg} alt="" />
     </a>
   </div>
-
+  
+  {/* Right site coin part */}
   <div className="flex items-center">
     <span className="mr-1">6000000000</span>
     <span className="mr-1">Coin</span>
