@@ -1,3 +1,12 @@
+## 🏏 BPL Dream – Using React.js
+
+A dynamic and interactive Bangladesh Premier League (BPL) fantasy-style web application built with React.js, powered by custom JSON data
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
