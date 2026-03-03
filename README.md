@@ -1,20 +1,18 @@
  ## 🏏 BPL Dream – Using React.js
 
-A dynamic and interactive Bangladesh Premier League (BPL) fantasy-style web application built with React.js, powered by custom JSON data
+**A dynamic** and interactive Bangladesh Premier League (BPL) fantasy-style web application built with React.js, powered by **custom JSON data**
 
 ## 🚀 Project Overview
 
-BPL Dream is a modern React-based web application where users can explore BPL players, build their dream squad, and experience a clean, responsive UI.
+**BPL Dream** is a modern **React-based** web application where users can explore BPL players, build their dream squad, and experience a clean, responsive UI.
 
-This project focuses on:
+### 🔍 This project focuses on:
 
-Component-based architecture
+- ✅ Component-based architecture
+- ✅ JSON-based dynamic data rendering
+- ✅ State management
+- ✅ Interactive UI experience
 
-JSON-based dynamic data rendering
-
-State management
-
-Interactive UI experience
 
 
 
