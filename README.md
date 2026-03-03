@@ -27,3 +27,22 @@
 
 
 
+## ✨ Key Features
+
+- 🚀 **Dynamic Player Data Rendering**  
+  Data is loaded from a custom JSON file and displayed dynamically using React.
+
+- ♻️ **Reusable React Components**  
+  Built with modular and maintainable component architecture.
+
+- ➕➖ **Add / Remove Player Functionality**  
+  Interactive squad selection with real-time UI updates.
+
+- 📱 **Fully Responsive Design**  
+  Optimized for desktop, tablet, and mobile devices.
+
+- 🎨 **Clean & Modern UI**  
+  Minimal, visually appealing interface using Tailwind CSS & DaisyUI.
+
+- 📂 **Organized Folder Structure**  
+  Scalable and well-structured project architecture.
