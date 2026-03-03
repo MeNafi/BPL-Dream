@@ -26,7 +26,6 @@
 - ✅ Interactive UI experience
 
 
-
 ## ✨ Key Features
 
 - 🚀 **Dynamic Player Data Rendering**  
@@ -46,3 +45,29 @@
 
 - 📂 **Organized Folder Structure**  
   Scalable and well-structured project architecture.
+
+
+## 📂 Data Handling (Custom JSON)
+
+Instead of using an external API, this project uses a **custom local JSON file** to manage player data.
+
+### 🗄️ Stored Player Information
+
+Each player object includes:
+
+- 🏷️ **Player Name**
+- 🏏 **Team Name**
+- 🎯 **Role** — Batsman, Bowler, All-Rounder, Wicket-Keeper
+- 💰 **Price**
+- 🖼️ **Image**
+
+### ⚡ How It Works
+
+- Data is imported directly from the JSON file.
+- Players are rendered dynamically using `map()`.
+- React **state hooks (`useState`)** manage selection and UI updates.
+- Changes reflect instantly without page reload.
+
+> ✅ Simple structure  
+> ✅ No external API dependency  
+> ✅ Fast and efficient rendering
