@@ -20,7 +20,7 @@ function App() {
     <>
    
     <Navbar></Navbar>
-    <Suspense>
+    <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
       <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
     </Suspense>
     
