@@ -46,8 +46,6 @@
 - 📂 **Organized Folder Structure**  
   Scalable and well-structured project architecture.
 
-
-
 ## 🗃️ Data Handling (Custom JSON)
 
 Instead of using an **external API,** this project uses a **custom local JSON file** to manage player data.
