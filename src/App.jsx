@@ -7,7 +7,7 @@ import { Suspense } from 'react'
 
 
 const fetchPlayers = async () => {
-  const res = await fetch("/.players.json")
+  const res = await fetch("/players.json")
   return res.json()
 }
 
