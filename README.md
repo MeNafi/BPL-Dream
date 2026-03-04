@@ -52,7 +52,7 @@
 
 Instead of using an **external API,** this project uses a **custom local JSON file** to manage player data.
 
-### 🗄️ Stored Player Information
+#### 🗄️ Stored Player Information
 
 Each player object includes:
 
