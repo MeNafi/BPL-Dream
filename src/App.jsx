@@ -1,36 +1,31 @@
-import './App.css'
+import "./App.css";
 
-import SelectedPlayers from './components/AvailablePlayers/SelectedPlayers/SelectedPlayers'
-import AvailablePlayers from './components/AvailablePlayers/AvailablePlayers'
-import Navbar from './components/Navbar/Navbar'
-import { Suspense } from 'react'
-
+import SelectedPlayers from "./components/AvailablePlayers/SelectedPlayers/SelectedPlayers";
+import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
+import Navbar from "./components/Navbar/Navbar";
+import { Suspense } from "react";
 
 const fetchPlayers = async () => {
-  const res = await fetch("/players.json")
-  return res.json()
-}
-
+  const res = await fetch("/players.json");
+  return res.json();
+};
 
 function App() {
-
-  const playersPromise = fetchPlayers()
+  const playersPromise = fetchPlayers();
 
   return (
     <>
-   
-    <Navbar></Navbar>
-    
+      <Navbar></Navbar>
 
-    <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-      <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
-    </Suspense>
-    
-    {/* <SelectedPlayers></SelectedPlayers> */}
-     
-    
+      <Suspense
+        fallback={<span className="loading loading-spinner loading-xl"></span>}
+      >
+        <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
+      </Suspense>
+
+      {/* <SelectedPlayers></SelectedPlayers> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
