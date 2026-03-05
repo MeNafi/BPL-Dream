@@ -5,9 +5,13 @@ import flagImg from "../../assets/report-1.png";
 const AvailablePlayers = ({ playersPromise }) => {
   const playerData = use(playersPromise);
   console.log(playerData);
+ 
   return (
     <div className="max-w-[1000px] mx-auto">
-      <div className="card bg-base-100 w-96 shadow-sm p-4">
+      
+      
+    {
+      playerData.map(player=> <div className="card bg-base-100 w-96 shadow-sm p-4">
         <figure>
           <img
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -43,7 +47,12 @@ const AvailablePlayers = ({ playersPromise }) => {
             <button className="btn btn-primary">Choose player</button>
           </div>
         </div>
-      </div>
+      </div>)
+    }  
+      
+      
+      
+      
     </div>
   );
 };
