@@ -19,31 +19,31 @@ const AvailablePlayers = ({ playersPromise }) => {
           />
         </figure>
         <div className="mt-4">
-          <div className="flex">
+          <div className="flex w-[20px h-[20px]">
             <img src={userImg} alt="" />
-            <h2 className="card-title ml-2">Virat Kohli</h2>
+            <h2 className="card-title ml-2">{player["player-name"]}</h2>
           </div>
 
           <div className="flex justify-between mt-4 border-b-2 border-gray-200 pb-1">
             <div className="flex item-center ">
               <img className="w-[20px] h-[20px]" src={flagImg} alt="" />
-              <span className="ml-2">India</span>
+              <span className="ml-2">{player["player-country"]}</span>
             </div>
-            <button className="btn">All rounder</button>
+            <button className="btn">{player["player-role"]}</button>
           </div>
 
           <div className="flex justify-between font-bold">
             <span>Rating</span>
-            <span>5</span>
+            <span>{player.rating}</span>
           </div>
 
           <div className="flex justify-between mt-4">
-            <span className="font-bold">Left hand bat</span>
-            <span>Right hand ball</span>
+            <span className="font-bold">{player["batting-style"]}</span>
+            <span>{player["bowling-style"]}</span>
           </div>
          
           <div className="card-actions mt-4 flex justify-between-items-center">
-            <p className="font-bold">Price: $1500000</p>
+            <p className="font-bold">Price: ${player.price}</p>
             <button className="btn btn-primary">Choose player</button>
           </div>
         </div>
