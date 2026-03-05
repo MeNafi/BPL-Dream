@@ -7,7 +7,7 @@ const AvailablePlayers = ({ playersPromise }) => {
   console.log(playerData);
  
   return (
-    <div className="max-w-[1000px] mx-auto">
+    <div className="max-w-[1000px] mx-auto grid grid-cols-3">
       
       
     {
@@ -16,6 +16,7 @@ const AvailablePlayers = ({ playersPromise }) => {
           <img
             src={player["player-image"]}
             alt="Shoes"
+            className = "w-full h-[400px] object-cover"
           />
         </figure>
         <div className="mt-4">
