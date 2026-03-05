@@ -4,46 +4,66 @@ import flagImg from "../../assets/report-1.png";
 
 const AvailablePlayers = ({ playersPromise }) => {
   const playerData = use(playersPromise);
-  console.log(playerData);
 
   return (
-    <div className="max-w-[1000px] mx-auto grid grid-col-1 md:grid-cols-3 gap-8 mt-10">
-      {playerData.map((player) => (
-        <div className="card bg-base-100 shadow-sm p-4">
+    <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 p-4">
+      {playerData.map((player, index) => (
+        <div key={index} className="card bg-base-100 border border-gray-200 shadow-sm p-4 rounded-xl">
+          {/* Main Player Image */}
           <figure>
             <img
               src={player["player-image"]}
-              alt="Shoes"
-              className="w-full h-[400px] object-cover"
+              alt={player["player-name"]}
+              className="w-full h-[400px] object-cover rounded-xl"
             />
           </figure>
-          <div className="mt-4">
-            <div className="flex w-[20px h-[20px]">
-              <img src={userImg} alt="" />
-              <h2 className="card-title ml-2">{player["player-name"]}</h2>
+
+          <div className="mt-5">
+            {/* Player Name and User Icon Alignment */}
+            <div className="flex items-center gap-3">
+              <img src={userImg} alt="" className="w-6 h-6 object-contain" />
+              <h2 className="text-xl font-bold text-gray-800">{player["player-name"]}</h2>
             </div>
 
-            <div className="flex justify-between mt-4 border-b-2 border-gray-200 pb-1">
-              <div className="flex item-center ">
-                <img className="w-[20px] h-[20px]" src={flagImg} alt="" />
-                <span className="ml-2">{player["player-country"]}</span>
+            {/* FIXED ALIGNMENT: Flag and Country Name Row */}
+            <div className="flex justify-between items-center mt-4 border-b border-gray-100 pb-4">
+              {/* This flex container ensures the flag and text sit perfectly on the same horizontal line */}
+              <div className="flex items-center gap-2"> 
+                <img 
+                  className="w-5 h-5 object-contain opacity-70" 
+                  src={flagImg} 
+                  alt="flag" 
+                />
+                <span className="text-gray-500 text-base leading-none">
+                  {player["player-country"]}
+                </span>
               </div>
-              <button className="btn">{player["player-role"]}</button>
+              
+              {/* Player Role Badge */}
+              <span className="bg-gray-100 px-4 py-1.5 rounded-lg text-sm font-medium text-gray-700">
+                {player["player-role"]}
+              </span>
             </div>
 
-            <div className="flex justify-between font-bold">
-              <span>Rating</span>
-              <span>{player.rating}</span>
-            </div>
+            {/* Rating and Style Details */}
+            <div className="mt-4 space-y-3">
+              <div className="flex justify-between items-center">
+                <span className="font-bold text-gray-800">Rating</span>
+                <span className="text-gray-500">{player.rating}</span>
+              </div>
 
-            <div className="flex justify-between mt-4">
-              <span className="font-bold">{player["batting-style"]}</span>
-              <span>{player["bowling-style"]}</span>
-            </div>
+              <div className="flex justify-between items-center">
+                <span className="font-bold text-gray-800">{player["batting-style"]}</span>
+                <span className="text-gray-500">{player["bowling-style"]}</span>
+              </div>
 
-            <div className="card-actions mt-4 flex justify-between-items-center">
-              <p className="font-bold">Price: ${player.price}</p>
-              <button className="btn btn-primary">Choose player</button>
+              {/* Price and Action Button */}
+              <div className="flex justify-between items-center pt-2">
+                <p className="font-bold text-gray-800">Price: ${player.price}</p>
+                <button className="btn btn-outline btn-sm border-gray-300 hover:bg-yellow-400 hover:text-black transition-all rounded-lg normal-case">
+                  Choose Player
+                </button>
+              </div>
             </div>
           </div>
         </div>
