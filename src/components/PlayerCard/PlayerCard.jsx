@@ -17,6 +17,7 @@ const PlayerCard = ({player, setAvailableBalance, availableBalance, purchasedPla
                     setPurchasedPlayers([...purchasedPlayers, playerData])
                   }
    
+                  
    return (
        <div className="card bg-base-100 border border-gray-200 shadow-sm p-4 rounded-xl">
           {/* Main Player Image */}
