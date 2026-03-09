@@ -3,6 +3,7 @@ import navImg from "../../assets/logo.png";
 import dollarImg from "../../assets/dollar-1.png";
 
 const Navbar = ({availableBalance}) => {
+  
   return (
     // Left site logo part
     <div className="navbar max-w-[1200px] mx-auto">
