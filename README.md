@@ -2,7 +2,11 @@
 
 **A dynamic** and interactive Bangladesh Premier League (BPL) fantasy-style web application built with **React.js,** powered by **custom JSON data**
 
-## 🛠️ Tech Stack
+
+
+🧩
+
+## 🧩 Tech Stack
 
 <p align="left">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
