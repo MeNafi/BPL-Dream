@@ -15,6 +15,7 @@ function App() {
   const [toggle, setToggle] = useState(true);
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
   console.log(purchasedPlayers)
+  
   return (
     <>
       <Navbar availableBalance={availableBalance}></Navbar>
