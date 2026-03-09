@@ -1,5 +1,4 @@
 import "./App.css";
-
 import SelectedPlayers from "./components/AvailablePlayers/SelectedPlayers/SelectedPlayers";
 import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
 import Navbar from "./components/Navbar/Navbar";
