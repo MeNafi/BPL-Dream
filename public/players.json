@@ -7,7 +7,7 @@
     "rating": 9.5,
     "batting-style": "Left-hand bat",
     "bowling-style": "Left-arm medium-fast",
-    "price": "USD 60,000"
+    "price": "60,000 USD"
   },
   {
     "player-image": "https://i.ibb.co.com/d4BmtFJT/Parvez-Hossain-Emon.jpg",
@@ -17,7 +17,7 @@
     "rating": 9.1,
     "batting-style": "Left-hand bat",
     "bowling-style": "N/A",
-    "price": "USD 40,000"
+    "price": "40,000 USD"
   },
   {
     "player-image": "https://i.ibb.co.com/GQjQJ1Wn/Towhid-Hridoy.jpg",
@@ -27,7 +27,7 @@
     "rating": 9.0,
     "batting-style": "Right-hand bat",
     "bowling-style": "Right-arm off-break",
-    "price": "USD 48,000"
+    "price": "48,000 USD"
   },
   {
     "player-image": "https://i.ibb.co.com/KpvYj1Q2/Mehidy-Hasan-Miraz.jpg",
@@ -37,7 +37,7 @@
     "rating": 9.3,
     "batting-style": "Right-hand bat",
     "bowling-style": "Right-arm off-break",
-    "price": "USD 72,000"
+    "price": "72,000 USD"
   },
   {
     "player-image": "https://i.ibb.co.com/x8CNN0vR/Alex-Hales.jpg",
@@ -47,7 +47,7 @@
     "rating": 8.8,
     "batting-style": "Right-hand bat",
     "bowling-style": "Right-arm medium",
-    "price": "USD 70,000"
+    "price": "70,000 USD"
   },
   {
     "player-image": "https://i.ibb.co.com/vx0kmNgT/Mustafizur-Rahman.jpg",
@@ -57,7 +57,7 @@
     "rating": 9.2,
     "batting-style": "Left-hand bat",
     "bowling-style": "Left-arm fast-medium",
-    "price": "USD 75,000"
+    "price": "75,000 USD"
   },
   {
     "player-image": "https://i.ibb.co.com/WpsYQ44b/Najmul-Hossain-Shanto.jpg",
@@ -67,7 +67,7 @@
     "rating": 8.7,
     "batting-style": "Left-hand bat",
     "bowling-style": "Right-arm off-break",
-    "price": "USD 58,000"
+    "price": "58,000 USD"
   },
   {
     "player-image": "https://i.ibb.co.com/LXKDmZxS/Mohammad-Amir.jpg",
@@ -77,7 +77,7 @@
     "rating": 8.9,
     "batting-style": "Left-hand bat",
     "bowling-style": "Left-arm fast",
-    "price": "USD 35,000"
+    "price": "35,000 USD"
   },
   {
     "player-image": "https://i.ibb.co.com/Jj4TKV00/Dasun-Shanak.jpg",
@@ -87,7 +87,7 @@
     "rating": 8.6,
     "batting-style": "Right-hand bat",
     "bowling-style": "Right-arm medium",
-    "price": "USD 55,000"
+    "price": "55,000 USD"
   },
   {
     "player-image": "https://i.ibb.co.com/ch5RWtWb/Taskin-Ahmed.jpg",
@@ -97,7 +97,7 @@
     "rating": 9.0,
     "batting-style": "Left-hand bat",
     "bowling-style": "Right-arm fast",
-    "price": "USD 50,000"
+    "price": "50,000 USD"
   },
   {
     "player-image": "https://i.ibb.co.com/6cgjrKg7/Mohammad-Naim.jpg",
@@ -107,7 +107,7 @@
     "rating": 8.5,
     "batting-style": "Left-hand bat",
     "bowling-style": "Right-arm off-break",
-    "price": "USD 48,000"
+    "price": "48,000 USD"
   },
   {
     "player-image": "https://i.ibb.co.com/cXMkCPQ4/Litton-Das.jpg",
@@ -117,6 +117,6 @@
     "rating": 8.8,
     "batting-style": "Right-hand bat",
     "bowling-style": "N/A",
-    "price": "USD 56,000"
+    "price": "56,000 USD"
   }
 ]
