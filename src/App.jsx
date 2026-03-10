@@ -34,7 +34,7 @@ function App() {
             onClick={() => setToggle(false)}
             className={`py-3 px-4 border-1 border-gray-400 rounded-r-2xl border-l-0 ${toggle === false ? "bg-[#E7FE29]" : ""}`}
           >
-            selected <span>{0}</span>
+            selected <span>{purchasedPlayers.length}</span>
           </button>
         </div>
       </div>
