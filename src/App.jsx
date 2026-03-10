@@ -21,7 +21,7 @@ function App() {
       <Navbar availableBalance={availableBalance}></Navbar>
 
       <div className="max-w-[1170px] mx-auto flex justify-between items-center mt-4">
-        <h1 className="font-bold text-2xl">{toggle ===true?"Available Players":"Selected Player (4/6)"}</h1>
+        <h1 className="font-bold text-2xl">{toggle ===true?"Available Players":`Selected Player (${purchasedPlayers.length}/6)`}</h1>
 
         <div className="font-bold">
           <button
