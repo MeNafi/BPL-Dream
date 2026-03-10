@@ -2,6 +2,7 @@ import React from 'react';
 
 const SelectedCard = ({player}) => {
     console.log(player)
+    
     return (
          <div className="border-2 mt-5 border-gray-100 p-3 flex justify-between items-center rounded-xl">
      
