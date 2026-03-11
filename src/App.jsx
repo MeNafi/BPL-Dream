@@ -4,7 +4,8 @@ import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
 import Navbar from "./components/Navbar/Navbar";
 import { Suspense, useState } from "react";
 import { ToastContainer} from 'react-toastify';
-import Banner from './components/Banner/Banner'; // Import Banner
+import Banner from './components/Banner/Banner';// Import Banne
+import Footer from './components/Footer/Footer'; 
 
 const fetchPlayers = async () => {
   const res = await fetch("/players.json");
@@ -63,7 +64,13 @@ function App() {
         <SelectedPlayers removePlayer={removePlayer}  purchasedPlayers={purchasedPlayers}></SelectedPlayers>
       )}
     
-    
+  
+
+<main className="max-w-[1170px] mx-auto pb-10">
+  {/* Players Grid Here */}
+</main>
+<Footer />
+
       <ToastContainer/>
     </>
   );
