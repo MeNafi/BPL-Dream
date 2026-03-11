@@ -3,9 +3,9 @@ import SelectedPlayers from "./components/AvailablePlayers/SelectedPlayers/Selec
 import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
 import Navbar from "./components/Navbar/Navbar";
 import { Suspense, useState } from "react";
-import { ToastContainer} from 'react-toastify';
-import Banner from './components/Banner/Banner';// Import Banne
-import Footer from './components/Footer/Footer'; 
+import { ToastContainer } from "react-toastify";
+import Banner from "./components/Banner/Banner"; // Import Banne
+import Footer from "./components/Footer/Footer";
 
 const fetchPlayers = async () => {
   const res = await fetch("/players.json");
@@ -17,14 +17,18 @@ function App() {
   const [availableBalance, setAvailableBalance] = useState(600000);
   const [toggle, setToggle] = useState(true);
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
- 
+
   const removePlayer = (p) => {
-    const fileteredData = purchasedPlayers.filter(ply => ply["player-name"] !==p["player-name"])
+    const fileteredData = purchasedPlayers.filter(
+      (ply) => ply["player-name"] !== p["player-name"],
+    );
     console.log(fileteredData);
-    setPurchasedPlayers(fileteredData)
-    setAvailableBalance(availableBalance + parseInt(p["price"].split("USD").join("").split(",").join("")))
-    
-  }
+    setPurchasedPlayers(fileteredData);
+    setAvailableBalance(
+      availableBalance +
+        parseInt(p["price"].split("USD").join("").split(",").join("")),
+    );
+  };
 
   return (
     <>
@@ -34,7 +38,11 @@ function App() {
       {toggle && <Banner />}
 
       <div className="max-w-[1170px] mx-auto flex justify-between items-center mt-4">
-        <h1 className="font-bold text-2xl">{toggle ===true?"Available Players":`Selected Player (${purchasedPlayers.length}/6)`}</h1>
+        <h1 className="font-bold text-2xl">
+          {toggle === true
+            ? "Available Players"
+            : `Selected Player (${purchasedPlayers.length}/6)`}
+        </h1>
 
         <div className="font-bold">
           <button
@@ -58,20 +66,29 @@ function App() {
             <span className="loading loading-spinner loading-xl"></span>
           }
         >
-          <AvailablePlayers purchasedPlayers={purchasedPlayers} setPurchasedPlayers={setPurchasedPlayers} availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromise={playersPromise}></AvailablePlayers>
+          <AvailablePlayers
+            purchasedPlayers={purchasedPlayers}
+            setPurchasedPlayers={setPurchasedPlayers}
+            availableBalance={availableBalance}
+            setAvailableBalance={setAvailableBalance}
+            playersPromise={playersPromise}
+          ></AvailablePlayers>
         </Suspense>
       ) : (
-        <SelectedPlayers removePlayer={removePlayer}  purchasedPlayers={purchasedPlayers}></SelectedPlayers>
+        <SelectedPlayers
+          removePlayer={removePlayer}
+          purchasedPlayers={purchasedPlayers}
+        ></SelectedPlayers>
       )}
-    
-  
+      
+      {/* This is the footer section part */}
+      <main className="max-w-[1170px] mx-auto pb-10">
+        {/* Players Grid Here */}
+      </main>
+      <Footer />
+      {/* End Footer section part */}
 
-<main className="max-w-[1170px] mx-auto pb-10">
-  {/* Players Grid Here */}
-</main>
-<Footer />
-
-      <ToastContainer/>
+      <ToastContainer />
     </>
   );
 }
