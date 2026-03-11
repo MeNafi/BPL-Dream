@@ -3,7 +3,7 @@ import React from "react";
 const SelectedCard = ({ player, removePlayer  }) => {
   console.log(player);
   const handleRemove = () => {
-    removePlayer("remove player done")
+    removePlayer(player)
  }
 
   return (

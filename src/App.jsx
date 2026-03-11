@@ -16,7 +16,10 @@ function App() {
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
  
   const removePlayer = (p) => {
-    console.log(p);
+    const fileteredData = purchasedPlayers.filter(ply => ply["player-name"] !==p["player-name"])
+    console.log(fileteredData);
+    setPurchasedPlayers(fileteredData)
+    setAvailableBalance(availableBalance + parseInt(p["price"].split("USD").join("").split(",").join("")))
     
   }
 
