@@ -3,7 +3,8 @@ import SelectedPlayers from "./components/AvailablePlayers/SelectedPlayers/Selec
 import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
 import Navbar from "./components/Navbar/Navbar";
 import { Suspense, useState } from "react";
- import { ToastContainer} from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
+import Banner from './components/Banner/Banner'; // Import Banner
 
 const fetchPlayers = async () => {
   const res = await fetch("/players.json");
@@ -27,6 +28,9 @@ function App() {
   return (
     <>
       <Navbar availableBalance={availableBalance}></Navbar>
+
+      {/* Banner added here - only shows when toggle is true */}
+      {toggle && <Banner />}
 
       <div className="max-w-[1170px] mx-auto flex justify-between items-center mt-4">
         <h1 className="font-bold text-2xl">{toggle ===true?"Available Players":`Selected Player (${purchasedPlayers.length}/6)`}</h1>
@@ -60,7 +64,7 @@ function App() {
       )}
     
     
-     <ToastContainer/>
+      <ToastContainer/>
     </>
   );
 }
