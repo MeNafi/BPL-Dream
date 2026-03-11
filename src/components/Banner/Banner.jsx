@@ -2,7 +2,9 @@ import React from 'react';
 import bgShadow from "../../assets/bg-shadow.png";
 import bannerMain from "../../assets/banner-main.png";
 
+
 const Banner = () => {
+  
   return (
     <div
       className="max-w-[1170px] mx-auto my-8 w-11/12 rounded-3xl bg-black py-10 md:py-16 text-center border border-gray-800"
