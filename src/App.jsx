@@ -6,6 +6,7 @@ import { Suspense, useState } from "react";
 import { ToastContainer} from 'react-toastify';
 import Banner from './components/Banner/Banner'; // Import Banner
 
+
 const fetchPlayers = async () => {
   const res = await fetch("/players.json");
   return res.json();
