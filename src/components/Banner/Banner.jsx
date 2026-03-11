@@ -6,7 +6,7 @@ import bannerMain from "../../assets/banner-main.png";
 const Banner = () => {
   return (
     <div
-      className="mx-auto my-8 w-11/12 rounded-3xl bg-black py-16 text-center"
+      className="max-w-[1170px] mx-auto px-4 md:px-0 mx-auto my-8 w-11/12 rounded-3xl bg-black py-16 text-center"
       style={{
         backgroundImage: `url(${bgShadow})`,
         backgroundSize: 'cover',
