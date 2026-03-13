@@ -4,7 +4,7 @@ import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
 import Navbar from "./components/Navbar/Navbar";
 import { Suspense, useState } from "react";
 import { ToastContainer } from "react-toastify";
-import Banner from "./components/Banner/Banner"; // Import Banne
+import Banner from "./components/Banner/Banner"; // Import Banner
 import Footer from "./components/Footer/Footer";
 
 const fetchPlayers = async () => {
@@ -80,7 +80,7 @@ function App() {
           purchasedPlayers={purchasedPlayers}
         ></SelectedPlayers>
       )}
-      
+
       {/* This is the footer section part */}
       <main className="max-w-[1170px] mx-auto pb-10">
         {/* Players Grid Here */}
