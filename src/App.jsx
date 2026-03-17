@@ -37,14 +37,14 @@ function App() {
       {/* Banner added here - only shows when toggle is true */}
       {toggle && <Banner />}
 
-      <div className="max-w-[1170px] mx-auto flex justify-between items-center mt-4">
-        <h1 className="font-bold text-2xl">
+      <div className="max-w-[1170px] mx-auto flex flex-col items-end sm:flex-row sm:justify-between sm:items-center mt-4 gap-2 px-4 lg:px-0">
+        <h1 className="font-bold text-2xl w-full sm:w-auto">
           {toggle === true
             ? "Available Players"
             : `Selected Player (${purchasedPlayers.length}/6)`}
         </h1>
 
-        <div className="font-bold">
+        <div className="font-bold mt-4">
           <button
             onClick={() => setToggle(true)}
             className={`py-3 px-4 border-1 border-gray-400 rounded-l-2xl border-r-0 ${toggle === true ? "bg-[#E7FE29]" : ""}`}
