@@ -58,7 +58,7 @@
 
 #### 🗄️ Stored Player Information
 
-Each player object includes:
+**Each player object includes:**
 
 - 🏷️ **Player Name**
 - 🏏 **Team Name**
@@ -68,10 +68,10 @@ Each player object includes:
 
 ### ⚡ How It Works
 
-- Data is imported directly from the JSON file.
-- Players are rendered dynamically using `map()`.
-- React **state hooks (`useState`)** manage selection and UI updates.
-- Changes reflect instantly without page reload.
+- Data is imported directly from the **JSON file.**
+- Players are rendered **dynamically using map**
+- React **state hooks (useState)** manage selection and **UI updates.**
+- Changes reflect instantly **without page reload.**
 
 > ✅ Simple structure  
 > ✅ No external API dependency  
