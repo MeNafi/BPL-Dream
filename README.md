@@ -74,5 +74,5 @@
 - Changes reflect instantly **without page reload.**
 
 > ✅ Simple structure  
-> ✅ No external API dependency  
+> ✅ **No external API dependency**  
 > ✅ Fast and efficient rendering
