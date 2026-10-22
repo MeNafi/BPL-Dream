@@ -8,7 +8,7 @@
 
 ## 🧩 Tech Stack 
 
-<p align="left">
+<p align="left"> 
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
   <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript"/>
