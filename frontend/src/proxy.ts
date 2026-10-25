@@ -12,7 +12,7 @@ export function proxy(request: NextRequest) {
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
   return response;
 }
-
+ 
 export const config = {
   matcher: ['/((?!_next/static|_next/image|favicon.ico|icon.svg).*)'],
 };
