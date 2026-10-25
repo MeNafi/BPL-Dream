@@ -1,0 +1,53 @@
+enum Role {
+  STUDENT
+  ADMIN
+}
+
+enum SubmissionStatus {
+  PENDING
+  APPROVE
+  REJECTED
+}
+
+
+model User {
+  id   String  @id @default(uuid())
+  name String
+  email String  @unique
+  passwordHash String
+  role Role @default(STUDENT)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  submissions Submission[]     @relation("StudentSubmissions")
+  reviews     Submission[]     @relation("ReviewersSubmissions")
+
+
+  @@map("users")
+}
+
+
+
+model Submission {
+  id  String    @id @default(ulid())
+  projectName String
+  repoUrl  String
+  liveUrl String
+  description String
+  status SubmissionStatus @default(PENDING)
+  studentId String
+  reviewID String?
+  reviewFeedback String?
+  submittedAt DateTime  @default(now())
+  reviewsAt DateTime?
+  createdAt DateTime
+  updatedAt DateTime
+  student User @relation("StudentSubmissions", fields: [studentId], references: [id])
+  reviewer User? @relation("ReviewersSubmissions", fields: [reviewID], references: [id])
+
+
+  @@index([status, submittedAt])
+  @@index ([studentId, submittedAt])
+  @@index([repoUrl])
+  @@map("submissions")
+
+}

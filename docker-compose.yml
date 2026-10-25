@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: project-review-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: review
+      POSTGRES_PASSWORD: review
+      POSTGRES_DB: project_review
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
