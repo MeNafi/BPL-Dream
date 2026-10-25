@@ -8,7 +8,7 @@
 
 ### Smart Assignment Submission & Review Platform
 
-A full-stack platform designed to simplify assignment submissions and streamline the review process between students and administrators. Submitly enables students to submit projects with GitHub repository links, track submission statuses, and receive feedback, while administrators can manage, review, approve, or reject submissions through a centralized dashboard.
+A full-stack platform designed to simplify assignment submissions and streamline the review process between students and administrators. Submity enables students to submit projects with GitHub repository links, track submission statuses, and receive feedback, while administrators can manage, review, approve, or reject submissions through a centralized dashboard.
 
 **Submit Projects. Get Reviewed. Keep Improving.**
 
