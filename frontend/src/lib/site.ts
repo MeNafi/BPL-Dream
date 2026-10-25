@@ -9,6 +9,6 @@ export const site = {
   links: {
     github: 'https://github.com',
     email: 'mailto:hello@submity.dev',
-  },
+  }, 
   stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
 };
