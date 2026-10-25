@@ -8,7 +8,7 @@ export type AuthUser = {
   /** True when the session is a local demo session (no backend involved). */
   demo?: boolean;
 };
-
+ 
 export type SubmissionStatus = 'pending' | 'approved' | 'rejected';
 
 export type Submission = {
