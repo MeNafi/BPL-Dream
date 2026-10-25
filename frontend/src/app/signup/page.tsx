@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { AuthPage } from '@/components/submity/auth-page';
-
+ 
 export const metadata: Metadata = { title: 'Create account' };
 
 export default function SignupPage() {
