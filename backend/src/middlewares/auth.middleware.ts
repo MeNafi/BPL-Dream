@@ -4,7 +4,7 @@ import { prisma }  from "../utils/prisma.js";
 import { jwtUtils } from "../utils/jwt.js";
 import { AppError } from "../utils/AppError.js";
 import { catchAsync } from "../utils/catchAsync.js";
-
+ 
 export const auth = (...roles: Role[]) =>
   catchAsync(async (req: Request, _res: Response, next: NextFunction) => {
     const header = req.headers.authorization;
