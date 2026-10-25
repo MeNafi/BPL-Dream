@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
-}
+} 
 
 export function initials(name?: string, fallback = 'AM') {
   const parts = (name || '').trim().split(/\s+/).filter(Boolean);
